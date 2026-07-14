@@ -1,19 +1,19 @@
 # Turbofan Engine Predictive Maintenance
 
-This repository contains predictive maintenance analysis for turbofan engines using the NASA CMAPSS dataset (Commercial Modular Aero-Propulsion System Simulation).
+This repository contains predictive maintenance analysis for turbofan engines using the NASA CMAPSS dataset FD001 (Commercial Modular Aero-Propulsion System Simulation).
 
 ## Dataset Overview
 
-The project includes four datasets (FD001-FD004) with multivariate time series data from turbofan engines. Each dataset represents different operational conditions and fault modes:
+The FD001 dataset contains multivariate time series data from turbofan engines operating under a single condition with a single fault mode (HPC Degradation).
 
-- FD001: Single operating condition, single fault mode (HPC Degradation)
-- FD002: Six operating conditions, single fault mode (HPC Degradation)
-- FD003: Single operating condition, two fault modes (HPC & Fan Degradation)
-- FD004: Six operating conditions, two fault modes (HPC & Fan Degradation)
+- 100 training trajectories
+- 100 test trajectories
+- Single operating condition (Sea Level)
+- Single fault mode (High Pressure Compressor Degradation)
 
 ## Data Structure
 
-Each dataset contains:
+The dataset contains:
 - Training trajectories showing engine degradation until failure
 - Test trajectories ending before failure
 - Ground truth RUL (Remaining Useful Life) values for test data
@@ -26,10 +26,10 @@ The primary goal is to predict the remaining useful life of turbofan engines bas
 
 ## Files
 
-- `train_FD00X.txt`: Training data for each dataset
-- `test_FD00X.txt`: Test data for each dataset
-- `RUL_FD00X.txt`: True remaining useful life values for test data
-- Jupyter notebooks: Analysis and model implementation
+- `train_FD001.txt`: Training data with 100 engine trajectories
+- `test_FD001.txt`: Test data with 100 engine trajectories
+- `RUL_FD001.txt`: True remaining useful life values for test data
+- `CMAPSS_FD001_predictive_maintenance_EN.ipynb`: Analysis and model implementation notebook
 
 ## Reference
 

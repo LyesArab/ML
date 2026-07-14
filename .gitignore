@@ -1,0 +1,24 @@
+# Ignore other datasets (FD002, FD003, FD004)
+*_FD002.txt
+*_FD003.txt
+*_FD004.txt
+
+# Ignore French version notebook
+CMAPSS_FD001_predictive_maintenance.ipynb
+
+# Ignore checkpoint files
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Environment
+.env
+venv/
+env/
